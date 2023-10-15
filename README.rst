@@ -47,8 +47,8 @@ Build docker image
 Run docker image
 ``
 echo "" >>docker-env.txt
-docker run -p 8888:8888 --name notebook -v ./workdir:/home/jovyan/work -v ~/work/dempster/2022_GluEP/FSL_MRS_Analysis:/home/jovyan/data \
-    -v ~/OneDriveDalUni/PBIL/GE_Orchestra_SDK-2.1.1-20221109/orchestra-sdk-2.1-1.python:/home/jovyan/work/orchestra \
+docker run -p 8888:8888 --name notebook -v ./workdir:/home/jovyan/work -v ~/project/data:/home/jovyan/data \
+    -v ~/project/tools/orchestra-sdk-2.1-1.python:/home/jovyan/work/orchestra \
     -e JUPYTER_ENABLE_LAB=yes --env-file docker-env.txt -it openmrslab/hfxcarlos:v1.0.2
 ``
 
