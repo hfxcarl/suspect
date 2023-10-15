@@ -38,9 +38,19 @@ Suspect itself is a pure Python package and is easy to install with `pip`_. Howe
 
 
 Install from Source (highly recommended)
- 
-   ```git clone https://github.com/hfxcarl/suspect.git && \
-       cd suspect/ && pip install .```
+`git clone https://github.com/hfxcarl/suspect.git && \
+       cd suspect/ && pip install .`
+
+## Build docker image
+`docker build -t openmrslab/hfxcarlos:v1.0.2 --file Dockerfile . `
+
+## Run docker image
+`
+echo "" >>docker-env.txt
+docker run -p 8888:8888 --name notebook -v ./workdir:/home/jovyan/work -v ~/work/dempster/2022_GluEP/FSL_MRS_Analysis:/home/jovyan/data \
+    -v ~/OneDriveDalUni/PBIL/GE_Orchestra_SDK-2.1.1-20221109/orchestra-sdk-2.1-1.python:/home/jovyan/work/orchestra \
+    -e JUPYTER_ENABLE_LAB=yes --env-file docker-env.txt -it openmrslab/hfxcarlos:v1.0.2
+`
 
 
 Getting Started
