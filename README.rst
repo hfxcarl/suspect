@@ -38,8 +38,8 @@ Suspect itself is a pure Python package and is easy to install with `pip`_. Howe
 
 
 Install from Source (highly recommended)
-`git clone https://github.com/hfxcarl/suspect.git && \
-       cd suspect/ && pip install .`
+```git clone https://github.com/hfxcarl/suspect.git && \
+       cd suspect/ && pip install .```
 
 ## Build docker image
 `docker build -t openmrslab/hfxcarlos:v1.0.2 --file Dockerfile . `
