@@ -37,8 +37,9 @@ Suspect itself is a pure Python package and is easy to install with `pip`_. Howe
 .. _here: http://www.scipy.org/install.html
 
 OR, install from Source (highly recommended)
-  `git clone https://github.com/hfxcarl/suspect.git && \
-       cd suspect/ && pip install .`
+ 
+   ``git clone https://github.com/hfxcarl/suspect.git && \
+       cd suspect/ && pip install .``
 
 
 Getting Started
