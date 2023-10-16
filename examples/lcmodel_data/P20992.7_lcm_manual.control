@@ -1,0 +1,24 @@
+ $LCMODL
+ OWNER = ''
+ DELTAT = 0.0002
+ HZPPPM = 127.64584959999999
+ NUNFIL = 4096
+ FILBAS = '/Users/carl/code/LCModel_20220603/LCModel_basis-sets/3t/press_te35_3t_v3.basis'
+ DOWS = T
+ DOECC = T
+ FILRAW = 'lcmodel_data/P20992.7_lcm.RAW'
+ FILPS = 'lcmodel_data/P20992.7_lcm.PS'
+ FILH2O = 'lcmodel_data/P20992.7_lcm.H2O'
+ KEY = 210387309
+ LPRINT = 6
+ LTABLE = 7
+ LPS = 8
+ LCOORD = 9
+ LCORAW = 10
+ LCSV = 11
+ ECHOT = 40.0
+ FILTAB = 'lcmodel_data/P20992.7_lcm.TABLE'
+ FILCSV = 'lcmodel_data/P20992.7_lcm.CSV'
+ FILCOO = 'lcmodel_data/P20992.7_lcm.COORD'
+ FILCOR = 'lcmodel_data/P20992.7_lcm.CORAW'
+ $END
