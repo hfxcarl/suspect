@@ -154,7 +154,7 @@ def write_all_files(filename, data, wref_data=None, params=None, filbas="/home/s
             fout.write(" KEY = 210387309\n")
             fout.write(" DELTAT = {}\n".format(data.dt))
             fout.write(" HZPPPM = {}\n".format(data.f0))
-            fout.write(" ECHOT = {}\n".format(data.te)
+            fout.write(" ECHOT = {}\n".format(data.te))
             fout.write(" NUNFIL = {}\n".format(data.np))
             for key, value in base_params.items():
                 if isinstance(value, str):
